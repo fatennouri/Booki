@@ -430,6 +430,11 @@ flex-direction: column;
     margin-top: 2%;
     justify-content:space-between ;
 }
+.activity-results img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
 }
 /* responsive téléphones portables */
 @media screen and (max-width: 767px) {
