@@ -30,8 +30,8 @@
       <div class="search-ville">
           <i class="fa-solid fa-location-dot"></i>
           <input type="text" placeholder="Marseille, France">
-          <button>Rechercher</button>
-          <button class="search-icon">
+          <button>
+           <p> Rechercher</p>
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
@@ -58,10 +58,12 @@
     <!-- info note -->
     <div class="info-note">
         <i class="fa-solid fa-info"></i>
-<p>Plus de 500 logements sont disponibles dans cette ville</p>
+<p id="result-note">
+    Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
     <!-- results-list -->
     <section id="Hébergements" class="Hébergements">
+        <!--partie hébérgements les plus populaires-->
         <div class="populaires">
         <h3>Les plus populaires
             <i class="fa-solid fa-star black"></i>
@@ -113,6 +115,7 @@
             </div>
     </div>
     </div>
+    <!--Parties hébergements à Marseilles avec 6 cards-->
     <div class="Heberg-Marseille">
         <h3>Hébergements à Marseille</h3>
         <div class="Hebergements-list">
@@ -192,15 +195,18 @@
 <a href="">Afficher plus</a>
     </div>
     </section>
-    <!-- activités -->
+    <!--fin de partrie hébergements-->
+    <!-- début de la 3éme grande partie du main :activités -->
     <section id="Activités">
         <h3>Activités à Marseille </h3>
         <div class="activités">
     <div class="activity-results">
+        <!--1ére column des activités-->
         <div class="column1">
             <img class="big-img" src="images/Viewport.jpg" alt="">
             <h4 class="activity-name">View port</h4>
         </div>
+        <!--2éme column des activités avec 2 images-->
 <div class="column2">
     <div class="top-part">
         <img class="img-top-part" src="images/FortdePomégues.jpg" alt="">
@@ -211,6 +217,7 @@
         <h4 class="activity-name">Iles des Frioul</h4>
     </div>
     </div>
+
     <div class="column3">
         <img class="big-img2" src="images/ParcNationaldesCalanques.jpg" alt="">
         <h4 class="activity-name">Parc National des Calanques</h4>
@@ -227,26 +234,87 @@
                 </div>
 </div>
         </div>
+        <div class="tablette">
+            <div class="card">
+                <img src="/images/Viewport.jpg" alt="Activité-viewport">
+                <div class="card-text">
+                    <h4>View port</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/FortdePomégues.jpg" alt="Activité-FortdePomégues">
+                <div class="card-text">
+                    <h4>Fort de Pomégues</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/ilesdesFrioul.jpg" alt="Activité-ilesdesFrioul">
+                <div class="card-text">
+                    <h4>Iles des Frioul</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/ParcNationaldesCalanques.jpg" alt="Activité-ParcNationaldesCalanques">
+                <div class="card-text">
+                    <h4>Parc National des Calanques</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/NotreDamedelagarde.jpg" alt="Activité-NotreDamedelagarde">
+                <div class="card-text">
+                    <h4>Notre-Dame-de-la-Garde</h4>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/ParcLongchamp.jpg" alt="Activité-ParcLongchamp">
+                <div class="card-text">
+                    <h4>Parc Longchamp</h4>
+                </div>
+            </div>
+        </div>
     </section>
   </main>
   <!-- footer -->
-  <footer class="footer">
-   <div class="footer-part1">
+  <div class="footer">
+    <!--footer a propos-->
+   <nav class="footer-part">
     <h4>A propos</h4>
-    <p>Fonctionnement du site</p>
-    <p>Conditions générales de vente</p>
-    <p>Données et confidentialité</p> 
-   </div>
-   <div class="footer-part2">
+    <ul class="FooterNav">
+    <li class="FooterNavli">
+    <a class="linkfooter" href="#">Fonctionnement du site</a>   
+</li>
+<li class="FooterNavli">
+    <a class="linkfooter" href="#">Conditions générales de vente</a>
+</li>   
+<li class="FooterNavli">
+    <a class="linkfooter" href="#">Données et confidentialité</a>
+</li>
+</ul>  
+</nav>
+<!--footer nos héberegements-->
+   <nav class="footer-part">
     <h4>Nos hébergements</h4>
-   <p>Charte qualité</p>
-     <p>Soumettre votre hotel</p>
-   </div>
-   <div class="footer-part3">
+    <ul class="FooterNav">
+        <li class="FooterNavli">
+   <a class="linkfooter" href="#">Charte qualité</a>
+        </li>
+        <li class="FooterNavli">
+   <a class="linkfooter" href="#">Soumettre votre hotel</a>
+    </li>
+    </ul>
+    </nav>
+    <!--footer assistance-->
+   <nav class="footer-part">
     <h4>Assistance</h4>
-    <p>Centre d'aide</p>
-     <p>Nous contacter</p>
-   </div>
-  </footer>
+    <ul class="FooterNav">
+        <li class="FooterNavli">
+    <a class="linkfooter" href="#">Centre d'aide</a>
+        </li>
+        <li class="FooterNavli">
+    <a class="linkfooter" href="#">Nous contacter</a>
+    </li>
+    </ul>
+    </nav>
+  </div>
 </body>
 </html>

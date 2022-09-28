@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
 font-family:"Raleway","Sans-serif";
-margin: 0;
+margin:0;
+padding:0;
 }
 body{
     margin-top:2%;
@@ -302,7 +303,6 @@ h3{
 }
 /*column 1 des activités*/ 
 .column1{
-    
     height: auto;
     margin-top: 1PX;
     margin-left: 0px;
@@ -388,40 +388,32 @@ h3{
 /*starting footer*/
 .footer{
     background-color: #f2f2f2;
-    margin: 0%;
+    margin-left:0%;
    width:100%;
     display: flex;
     margin-top: 16px;
-    gap: 20%;
-    padding-right: 180px;
-    padding: 16px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .FooterNavli{
-    list-style-type: none;
-    padding-top: 3%;
-    align-items: flex-start;
+    list-style-type: none; 
     margin: 0%;
+  padding-top: 8px;
 }
 .footer-part{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0%;
+    justify-content: space-between;
+    margin-left: 0%;
 }
 .FooterNav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 8px;
     font-weight: 400;
     font-size: medium;
-    margin: 0%;
+    margin: 0;
 }
-.footer h4{
+footer h4{
     font-weight: bold;
-    font-size: large; 
+    font-size: larger;
+   
 }
 .linkfooter:hover{
     color: #0065fc;
@@ -545,7 +537,7 @@ justify-content: space-between;
 background-color: #f2f2f2;
 margin-top: 2%;
     }
-    .footer-part1, .footer-part2, .footer-part3{
+    .FooterNav{
     gap: 1%;
     background-color: lightgrey;
     }
