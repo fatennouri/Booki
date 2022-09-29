@@ -251,9 +251,9 @@ gap: 2%;
     display: flex;
     background-color: white;
     margin-bottom: 2%;
-    height: 33%;
+    height: 32%;
     width: auto;
-  border-radius: 1rem;
+  border-radius: 8px;
   box-sizing: border-box;
 }
 .popular-card .stars{
@@ -269,11 +269,11 @@ gap: 2%;
 .popular-img3{
 display: flex;
 flex-basis: 80%;
-box-sizing: border-box;
-object-fit: cover;
 }
 .popular-img3 img{
     width: 100%;
+    height: 94%;
+    padding: 3%;
 }
 .popular-card-info{
     display: flex ;  
@@ -416,19 +416,17 @@ h3{
     display: flex;
     flex-basis: 30%;
     flex-direction: column;
-padding-left: 8px;
-margin: 8px;
+   padding-left: 5px;
+  margin: 8px;
 }
 .FooterNav{
     font-weight: 400;
     font-size: medium;
     margin: 0;
-    margin: 8px;
 }
 footer h4{
     font-weight: bold;
     font-size: larger;
-    padding-left: 0;
 }
 .linkfooter:hover{
     color: #0065fc;
@@ -447,7 +445,7 @@ flex-direction: column;
 }
 .Heberg-Marseille{
     flex-wrap: wrap;
- flex-direction: columns;
+ flex-direction: column;
 }
 .populaires img{
     height:180px;
@@ -506,19 +504,16 @@ flex-direction: column;
       flex-direction: column;
       align-items: flex-start;
     }
+    /*loupe en version mobile*/
     .fa-magnifying-glass{
         display: block;
         background-color: #0065fc;
         color: #DEEBFF;
-      justify-content: center;
     }
-    .search-ville button p{
+    .search-ville button span{
         display: none;
     }
-    .search-icon{
-        background-color:blue;
-    display: block;
-    }
+
     /*Hébergements version mobile*/
     .Hébergements{
       flex-direction: column;
@@ -557,7 +552,6 @@ margin-top: 2%;
     }
     .FooterNav{
     gap: 1%;
-    background-color: lightgrey;
     }
     }
    
