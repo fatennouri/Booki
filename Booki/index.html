@@ -21,25 +21,26 @@
         </nav>
     </header>
     <!--end of header-->
-          <main class="all">
+          <main>
       <!--titres-->
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      <p>En plein centre de ville ou en pleine nature
+      <p class="sous-titre">En plein centre de ville ou en pleine nature
       </p>
       <!-- search ville -->
-      <div class="search-ville">
+      <form class="search-ville" action="" method="get">
           <i class="fa-solid fa-location-dot"></i>
-          <input type="text" placeholder="Marseille, France">
+          <input type="search" placeholder="Marseille, France">
           <button>
            <span>Rechercher</span>
            <!--la loupe suivante ne s'affiche pas sur la version desktop-->
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-      </div>
+      </form>
       <!-- filters -->
       <div class="filter-list">
 <h2>Filtres</h2>
  <!--filtre économique-->
+ <span class="filtres-mobile">
 <div class="filter">
 <i class="fa-solid fa-money-bill-wave"></i>
 <span>Economique</span>
@@ -49,6 +50,7 @@
     <i class="fa-solid fa-child-reaching"></i>
     <span>Familial</span>
 </div>
+</span>
 <!--filtre romantique-->
     <div class="filter">
         <i class="fa-solid fa-heart"></i>
@@ -75,7 +77,7 @@
         </h3>
         <div class="popular-list">
             <!--premier hotel populaire-->
-            <div class="popular-card">
+            <a href="#" class="popular-card">
                 <img src="images/HotelLesoleildumatin.jpg" alt="">
                <div class="popular-card-info">
                 <h4 class="hotel-name">Hotel Le soleil du matin</h4>
@@ -88,7 +90,7 @@
                     <i class="fa-solid fa-star"></i>
                 </p>
             </div>
-            </div>
+            </a>
             <!--deuxiéme hotel populaire-->
             <div class="popular-card">
                 <img src="images/Aucoeurdel'eauChambresd'hotes.jpg" alt="">
@@ -248,52 +250,6 @@
                 </div>
 </div>
         </div>
-        <!--cette div class"activité-responsive" ne s'affiche pas sur la version desktop-->
-        <div class="activité-responsive">
-            <!--1 View port-->
-            <div class="card">
-                <img src="/images/Viewport.jpg" alt="Activité-viewport">
-                <div class="card-text">
-                    <h4>View port</h4>
-                </div>
-            </div>
-            <!--2 Fort de Pomégues-->
-            <div class="card">
-                <img src="/images/FortdePomégues.jpg" alt="Activité-FortdePomégues">
-                <div class="card-text">
-                    <h4>Fort de Pomégues</h4>
-                </div>
-            </div>
-            <!--3 Iles des Frioul-->
-            <div class="card">
-                <img src="/images/ilesdesFrioul.jpg" alt="Activité-ilesdesFrioul">
-                <div class="card-text">
-                    <h4>Iles des Frioul</h4>
-                </div>
-            </div>
-            <!--4 Parc National des Calanques-->
-            <div class="card">
-                <img src="/images/ParcNationaldesCalanques.jpg" alt="Activité-ParcNationaldesCalanques">
-                <div class="card-text">
-                    <h4>Parc National des Calanques</h4>
-                </div>
-            </div>
-            <!--5 Notre-Dame-de-la-Garde-->
-            <div class="card">
-                <img src="/images/NotreDamedelagarde.jpg" alt="Activité-NotreDamedelagarde">
-                <div class="card-text">
-                    <h4>Notre-Dame-de-la-Garde</h4>
-                </div>
-            </div>
-            <!--6 Parc Longchamp-->
-            <div class="card">
-                <img src="/images/ParcLongchamp.jpg" alt="Activité-ParcLongchamp">
-                <div class="card-text">
-                    <h4>Parc Longchamp</h4>
-                </div>
-            </div>
-        </div>
-        <!--fin des la partie activités-->
     </section>
   </main>
   <!-- footer -->
