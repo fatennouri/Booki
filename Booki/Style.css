@@ -60,7 +60,7 @@ h1{
     margin-bottom: 10px;
 }
 .sous-titre{
-    font-size:mediums;
+    font-size:medium;
 margin-bottom: 13px;
 font-weight: 500;
 }
@@ -288,7 +288,6 @@ gap: 2%;
     width: auto;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow:outset #0000002e 0 0 16px darkgrey;
   transition: 0.1s;
 }
 .popular-card .stars{
@@ -550,14 +549,18 @@ border-left: none;
     }
 
     /*Hébergements version mobile*/
+    .top-nav a{
+        border-top: none;
+        flex-wrap: wrap;
+    }
+    .heberg:hover{
+        border-bottom: #0065fc 5px solid;
+    }
     .Hébergements{
       flex-direction: column;
     }
     .Hebergements-list{
     flex-direction: column;
-    }
-    .popular-img3{
-        height: 135px;
     }
     /*les 6 images des hébergements à Marseilles */
     .IMG{
@@ -573,20 +576,19 @@ border-left: none;
     flex-direction: column;
     gap: 2%;
    }
-   .card{
-width: 95%;
-flex-basis: 15%;
-height:80%;
+   .activités img{
+    padding: 0%;
    }
     .footer{
       display: flex;
       flex-direction: column;
 justify-content: space-between;
 background-color: #f2f2f2;
-margin-top: 2%;
+margin-top: 5%;
     }
-    .FooterNav{
-    gap: 1%;
+    .footer-part{
+    gap: 15px;
+    margin-bottom: 30px;
     }
     }
    
