@@ -190,7 +190,7 @@ padding-right: 20px;
 }
 .Hébergements> div{
 background-color:#f2f2f2;
-padding:1%; 
+padding:2%; 
 border-radius: 16px;
 }
 /*Hébergements à Marseille*/
@@ -199,13 +199,13 @@ border-radius: 16px;
 }
 .Heberg-Marseille a{
     font-weight: bold;
+    padding: 2%;
 }
 .Hebergements-list{
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 2%;
 }
 .Hebergements-list div{
     flex-basis: 30%;
@@ -217,27 +217,23 @@ border-radius: 16px;
     height: 250PX;
     width: 100%;
     border-radius: 2%;
-  margin-bottom: 16px;
-  padding-bottom: 0%;
-  object-fit: cover;
-  object-position: center;
+  margin-bottom: 20px;
 }
 .Hebergements-list h4{
  font-weight: 600;
   margin-top: 4px;
   padding-left: 20PX;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .Hebergements-list p{
     padding-left: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .IMG{
 width: 92%;
 height: 55%;
-border-radius: 32px 32px 0px 0px;
+border-radius: 20px 20px 0px 0px;
 padding: 4% 5% 5% 4%;
-margin-bottom: auto;
 object-fit: cover;
 }
 .fa-star{
@@ -296,8 +292,7 @@ gap: 2%;
     height: 160px;
     width: 150px;
     margin: 10px;
-    padding-bottom: 2px;
-    border-radius: 18px 0 0 18px;
+    border-radius: 8px 0 0 8px;
     object-fit: cover;
 }
 .popular-card-info{
@@ -311,28 +306,24 @@ gap: 2%;
 }
 /* activités */
 #Activités{
-margin: 0%;
-height: 8%;
-margin-top: 16px;
-margin-bottom: 10px;
+margin-top: 5%;
 padding-left: 20px;
 padding-right: 20px;
+margin: 0%;
 }
 h3{
     padding: 15px;
 }
 .activity-results{
     display: flex;
-    gap: 1.3%;
+    gap: 1.2%;
     overflow: hidden;
-    height: 100%;
 }
 .activity-name{
     width: 100%;
     font-weight:bold ;
+    padding: 8px 0px;
     padding-left: 8px;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
 .activity-results img{
     border-radius: 16px 16px 0px 0px;
@@ -340,16 +331,14 @@ h3{
 }
 /*column 1 des activités*/ 
 .big-column{
-    height: auto;
-    margin-left: 0px;
     flex-basis: 24%;
     border-radius: 16px;
-    border: #DEEBFF solid 2px;
+    border: #DEEBFF solid 1px;
     display: flex;
     flex-direction: column;
 }
 .big-img{
-    height: 90%;
+    height: 70%;
     width: 100%;
    object-fit: cover;
 }
@@ -393,10 +382,10 @@ h3{
 /*1ère partie du column4 des activités*/
 .part-haut{
     width: 100%;
-    height: 50%;
+  flex-basis: 45%;
     border-radius: 16px;
     border: #DEEBFF solid 2px;
-    margin-bottom: 33%;
+    margin-bottom: 20%;
 }
 .part-haut-img{
     height: 70%;
@@ -405,7 +394,7 @@ h3{
 }
 /*2eme partie du column4 activités*/
 .part-bas{
-    height: 50%;
+ flex-basis: 45%;
     border: #DEEBFF solid 2px;
     border-radius: 16px;
 }
@@ -503,11 +492,16 @@ flex-direction: column;
 @media screen and (max-width: 767px) {
     /*Logo version mobile*/
     .logo{
+        display: inline;
       align-self: center;
-      margin-bottom: 5%;
+      margin-bottom: 8%;
     }
-      .top-nav{
-    padding-left: 2%;}
+      .top-nav a{
+    padding-left: 2%;
+border-top: none;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 
     header nav{
         display: block;
@@ -545,10 +539,12 @@ border-left: none;
     .heberg:hover{
         color: blue;
         border-bottom: #0065fc 3px solid;
+        border-top: none;
     }
     .activit:hover{
         color: blue;
         border-bottom: #0065fc 3px solid;
+        border-top: none;
     }
     .Hébergements{
       flex-direction: column;
