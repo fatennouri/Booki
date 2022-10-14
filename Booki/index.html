@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="device-width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
 <script src="https://kit.fontawesome.com/e416b822ca.js" crossorigin="anonymous"></script>
 <!-- méthode set up kit project avec mon compte fontawesome et copier le code (ligne 9 dans le head)  -->
 <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <!--beginning of header-->
+    <!--début du header-->
     <header>
+        <!--l'en-tete qui contient logo et deux liens de navigation-->
         <nav>
             <div class="logo">
             <img src="./images/Booki@3x.png" alt="Booki">
@@ -25,8 +26,9 @@
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p class="sous-titre">En plein centre de ville ou en pleine nature
       </p>
-      <!-- search ville -->
-      <form class="search-ville" action="index.html" method="get">
+      <!-- recherche ville -->
+      <!--formulaire pour écrire le nom de la ville-->
+      <form class="recherche-ville" action="index.html" method="get">
           <i class="fa-solid fa-location-dot"></i>
           <input type="search" placeholder="Marseille, France">
           <button>
@@ -35,103 +37,51 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-      <!-- filters -->
-      <div class="filter-list">
+      <!-- filtres -->
+      <div class="liste-filtres">
 <h2>Filtres</h2>
  <!--filtre économique-->
  <div class="filtres-mobile">
-<div class="filter">
+<div class="filtre">
 <i class="fa-solid fa-money-bill-wave"></i>
 <span>Economique</span>
 </div>
 <!--filtre familial-->
-<div class="filter">
+<div class="filtre">
     <i class="fa-solid fa-child-reaching"></i>
     <span>Familial</span>
 </div>
 </div>
 <!--filtre romantique-->
-    <div class="filter">
+    <div class="filtre">
         <i class="fa-solid fa-heart"></i>
         <span>Romantique</span>
         </div>
         <!--filtre animaux-->
-        <div class="filter">
+        <div class="filtre">
 <i class="fa-solid fa-dog"></i>
             <span>Animaux autorisés</span>
             </div>
     </div>
-    <!-- info note -->
-    <div class="info-note">
+    <!-- info  -->
+    <div class="nombre">
         <i class="fa-solid fa-info"></i>
-<p id="result-note">
+<p id="résultat-text">
     Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
     </header>
-    <!--end of header-->
-    <!-- results-list -->
-    <section id="Hébergements" class="Hébergements">
-        <!--partie hébérgements les plus populaires-->
-        <div class="populaires">
-        <h3>Les plus populaires
-            <i class="fa-solid fa-star black"></i>
-        </h3>
-        <div class="popular-list">
-            <!--premier hotel populaire-->
-            <a href="#" class="popular-card">
-                <img src="images/HotelLesoleildumatin.jpg" alt="">
-               <div class="popular-card-info">
-                <h4 class="hotel-name">Hotel Le soleil du matin</h4>
-                <p>Nuit à partir de 128<strong>€</strong></p>
-                <p class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
-            </div>
-            </a>
-            <!--deuxiéme hotel populaire-->
-            <div class="popular-card">
-                <img src="images/Aucoeurdel'eauChambresd'hotes.jpg" alt="">
-                <div class="popular-card-info">
-                <h4 class="hotel-name">Au coeur de l'eau Chambres d'hotes</h4>
-                <p>Nuit à partir de 71<strong>€</strong></p>
-                <p class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star lightgrey"></i>
-                </p>
-            </div>
-            </div>
-            <!--troisiéme hotel populaire-->
-            <div class="popular-card">
-                <img src="images/Hoteltoutbleuetblanc.jpg" alt="">
-               <div class="popular-card-info">
-                <h4 class="hotel-name">Hotel tout bleu et blanc</h4>
-                <p>Nuit à partir de 68<strong>€</strong></p>
-                <p class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star lightgrey"></i>
-                </p>
-            </div>
-            </div>
-    </div>
-    </div>
+    <!--fin du header-->
+    <!-- liste-résultas -->
+    <section id="Hébergements" class="Hébergements">     
     <!--Parties hébergements à Marseilles avec 6 cards-->
     <div class="Heberg-Marseille">
         <h3>Hébergements à Marseille</h3>
-        <div class="Hebergements-list">
+        <div class="liste-hébergements">
             <!--1 Auberge La Cannebière-->
             <div class="hotel-card">
+                <a href="#">
                 <img class="IMG" src="images/AubergeLaCannebiere.jpg" alt="">
-                <h4 class="hotel-name">Auberge La Cannebière</h4>
+                <h4 class="hotel-nom">Auberge La Cannebière</h4>
                 <p>Nuit à partir de <strong>25€</strong></p>
                 <p class="stars">
                     <i class="fa-solid fa-star"></i>
@@ -140,65 +90,101 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star lightgrey"></i>
                 </p>
+            </a>
             </div>
             <!--2 Hotel du port-->
             <div class="hotel-card">
+                <a href="#">
                 <img class="IMG" src="images/Hotelduport.jpg" alt="">
-                <h4 class="hotel-name">Hotel du port</h4>
+                <h4 class="hotel-nom">Hotel du port</h4>
                 <p>Nuit à partir de 52<strong>€</strong></p>
-                <p class="stars">
+                <p class="étoiles">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </p>
+            </a>
             </div>
             <!--3 Hotel les moeuttes-->
             <div class="hotel-card">
+                <a href="#">
                 <img class="IMG" src="images/HotelLesMouettes.jpg" alt="">
-                <h4 class="hotel-name">Hotel les moeuttes</h4>
+                <h4 class="hotel-nom">Hotel les moeuttes</h4>
                 <p>Nuit à partir de 76<strong>€</strong></p>
-                <p class="stars">
+                <p class="étoiles">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star lightgrey"></i>
                 </p>
+            </a>
             </div>
             <!--4 Hotel de la mer-->
             <div class="hotel-card">
+                <a href="#">
                 <img class="IMG" src="images/Hoteldelamer.jpg" alt="">
-                <h4 class="hotel-name">Hotel de la mer</h4>
+                <h4 class="hotel-nom">Hotel de la mer</h4>
                 <p>Nuit à partir de 46<strong>€</strong></p>
-                <p class="stars">
+                <p class="étoiles">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star lightgrey"></i>
                     <i class="fa-solid fa-star lightgrey"></i>
                 </p>
+            </a>
             </div>
             <!--5 Auberge Le Panier-->
             <div class="hotel-card">
+                <a href="#">
                 <img class="IMG" src="images/AubergeLePanier.jpg" alt="">
-                <h4 class="hotel-name">Auberge Le Panier</h4>
+                <h4 class="hotel-nom">Auberge Le Panier</h4>
                 <p>Nuit à partir de <strong>23€</strong></p>
-                <p class="stars">
+                <p class="étoiles">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star lightgrey"></i>
                 </p>
+            </a>
             </div>
             <!--6 Hotel chez Amina-->
             <div class="hotel-card">
+                <a href="#">
                 <img class="IMG" src="images/HotelchezAmina.jpg" alt="">
-                <h4 class="hotel-name">Hotel chez Amina</h4>
+                <h4 class="hotel-nom">Hotel chez Amina</h4>
                 <p>Nuit à partir de 96<strong>€</strong></p>
-                <p class="stars">
+                <p class="étoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </p>
+            </a>
+            </div>
+        </div>
+        <!--fin des 6 hébérgements affichés-->
+<a class="plus-lien" href="#">Afficher plus</a>
+    </div>
+     <!--partie hébérgements les plus populaires-->
+    <div class="populaires">
+        <h3>Les plus populaires
+            <i class="fa-solid fa-star black"></i>
+        </h3>
+        <div class="liste-populaire">
+            <!--premier hotel populaire-->
+            <a href="#">
+        <div class="popular-card">
+                <img src="images/HotelLesoleildumatin.jpg" alt="">
+               <div class="popular-card-info">
+                <h4 class="hotel-nom">Hotel Le soleil du matin</h4>
+                <p>Nuit à partir de 128<strong>€</strong></p>
+                <p class="étoiles">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -207,71 +193,104 @@
                 </p>
             </div>
         </div>
-        <!--fin des 6 hébérgements affichés-->
-<a href="">Afficher plus</a>
+    </a>
+           
+            <!--deuxiéme hotel populaire-->
+            <a href="#">
+            <div class="popular-card">
+                <img src="images/Aucoeurdel'eauChambresd'hotes.jpg" alt="">
+                <div class="popular-card-info">
+                <h4 class="hotel-nom">Au coeur de l'eau Chambres d'hotes</h4>
+                <p>Nuit à partir de 71<strong>€</strong></p>
+                <p class="étoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star lightgrey"></i>
+                </p>
+            </div>
+            </div>
+        </a>
+            <!--troisiéme hotel populaire-->
+            <a href="#">
+            <div class="popular-card">
+                <img src="images/Hoteltoutbleuetblanc.jpg" alt="">
+               <div class="popular-card-info">
+                <h4 class="hotel-nom">Hotel tout bleu et blanc</h4>
+                <p>Nuit à partir de 68<strong>€</strong></p>
+                <p class="étoiles">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star lightgrey"></i>
+                </p>
+            </div>
+            </div>
+        </a>
+    </div>
     </div>
     </section>
     <!--fin de partie hébergements-->
     <!-- début de la 3éme grande partie du main :activités -->
     <section id="Activités">
         <h3>Activités à Marseille </h3>
-        <div class="activités">
-    <div class="activity-results">
+    <div class="liste-activités">
         <!--1ére column des activités-->
-        <div class="big-column">
-            <img class="big-img" src="images/Viewport.jpg" alt="">
-            <h4 class="activity-name">View port</h4>
+        <div class="grande-colonne">
+            <img class="grande-img" src="images/Viewport.jpg" alt="">
+            <h4 class="activité-nom">View port</h4>
         </div>
         <!--2éme column des activités avec 2 images-->
-<div class="column2">
-    <div class="top-part">
-        <img class="img-top-part" src="images/FortdePomégues.jpg" alt="">
-        <h4 class="activity-name">Fort de Pomègues</h4>
+<div class="colonne2">
+    <div class="premiére-partie">
+        <img class="img-premiére-partie" src="images/FortdePomégues.jpg" alt="">
+        <h4 class="activité-nom">Fort de Pomègues</h4>
     </div>
-    <div class="bottom-part">
-        <img class="img-bottom-part" src="images/ilesdesFrioul.jpg" alt="">
-        <h4 class="activity-name">Iles des Frioul</h4>
+    <div class="deuxiéme-partie">
+        <img class="img-deuxiéme-partie" src="images/ilesdesFrioul.jpg" alt="">
+        <h4 class="activité-nom">Iles des Frioul</h4>
     </div>
     </div>
 <!--3éme column des activités avec une seule image-->
-    <div class="big-column">
-        <img class="big-img" src="images/ParcNationaldesCalanques.jpg" alt="">
-        <h4 class="activity-name">Parc National des Calanques</h4>
+    <div class="grande-colonne">
+        <img class="grande-img" src="images/ParcNationaldesCalanques.jpg" alt="">
+        <h4 class="activité-nom">Parc National des Calanques</h4>
                 </div>
  <!--4éme column des activités avec 2 images-->
-         <div class="column4">
-        <div class="part-haut">
-         <img class="part-haut-img" src="images/NotreDamedelagarde.jpg" alt="">
-        <h4 class="activity-name">Notre-Dame-de-la-Garde</h4>
+         <div class="colonne4">
+        <div class="partie-haut">
+         <img class="partie-haut-img" src="images/NotreDamedelagarde.jpg" alt="">
+        <h4 class="activité-nom">Notre-Dame-de-la-Garde</h4>
          </div>
-         <div class="part-bas">
-       <img class="part-bas-img" src="images/ParcLongchamp.jpg" alt="">
-     <h4 class="activity-name">Parc Longchamp</h4>
+         <div class="partie-bas">
+       <img class="partie-bas-img" src="images/ParcLongchamp.jpg" alt="">
+     <h4 class="activité-nom">Parc Longchamp</h4>
                     </div>
                 </div>
 </div>
-        </div>
     </section>
   </main>
   <!-- footer -->
   <div class="footer">
     <!--footer a propos-->
-   <nav class="footer-part">
+   <nav class="footer-colonne">
     <h4>A propos</h4>
     <ul class="FooterNav">
     <li class="FooterNavli">
-    <a class="linkfooter" href="#">Fonctionnement du site</a>   
+    <a class="lienfooter" href="#">Fonctionnement du site</a>   
 </li>
 <li class="FooterNavli">
-    <a class="linkfooter" href="#">Conditions générales de vente</a>
+    <a class="lienfooter" href="#">Conditions générales de vente</a>
 </li>   
 <li class="FooterNavli">
-    <a class="linkfooter" href="#">Données et confidentialité</a>
+    <a class="lienfooter" href="#">Données et confidentialité</a>
 </li>
 </ul>  
 </nav>
 <!--footer nos héberegements-->
-   <nav class="footer-part">
+   <nav class="footer-colonne">
     <h4>Nos hébergements</h4>
     <ul class="FooterNav">
         <li class="FooterNavli">
@@ -283,7 +302,7 @@
     </ul>
     </nav>
     <!--footer assistance-->
-   <nav class="footer-part">
+   <nav class="footer-colonne">
     <h4>Assistance</h4>
     <ul class="FooterNav">
         <li class="FooterNavli">
