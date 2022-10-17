@@ -1,0 +1,32 @@
+#Activités{
+    width: 95%;
+margin: auto;
+height: 45vh;
+overflow: hidden;
+}
+.liste-activités{
+    width: 100%;
+    height:75%;
+    display: flex;
+    justify-content: space-around;
+}
+.grande-colonne, .colonne2, .colonne4{
+width: 23%;
+}
+.grande-img{
+    width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
+}
+.premiére-partie, .deuxiéme-partie, .partie-haut, .partie-bas{
+    width: 90%;
+}
+.img-premiére-partie{
+    height: 25%;
+    
+}
+.colonne2, .colonne4{
+    display: flex;
+    flex-direction: column;
+}
