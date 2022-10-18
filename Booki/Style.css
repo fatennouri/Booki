@@ -5,7 +5,7 @@
 font-family:"Raleway","Sans-serif";
 margin:0;
 padding:0;
-box-sizing: border-box;
+box-sizing: content-box;
 }
 body{
     margin-top:1%;
@@ -186,13 +186,13 @@ justify-content: center;
 padding:0px 20px;
 }
 .Hébergements> div{
-background-color:#f2f2f2;
 padding:2%; 
 border-radius: 16px;
 }
 /*Hébergements à Marseille*/
 .Heberg-Marseille{
-    width: 66%;    
+    width: 66%;  
+    background-color:#f2f2f2;  
 }
 .plus-lien{
     margin-top: 10%;
@@ -213,6 +213,13 @@ border-radius: 16px;
   width: 30%;
   border-radius: 8%;
   background-color: white;
+}
+.hotel-card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 33%;
+    width: 100%;
 }
 .liste-hébergements h4{
  font-weight:bolder;
@@ -245,6 +252,7 @@ color:darkgrey;
     width: 33%;
     flex-direction: column;
     justify-content: space-around;
+    background-color:#f2f2f2;
 }
 .black{
     color: black;
@@ -309,15 +317,12 @@ h3{
 }
 .liste-activités{
     display: flex;
-    gap: 2.5%;
- height: 30%;
+    gap: 2.65%;
 }
 .activité-nom{
     width: 100%;
     font-weight:bold ;
-    padding: 8px 0px;
-    padding-left: 8px;
-    padding-bottom: 8px;
+    padding: 8px;
 }
 .liste-activités img{
     border-radius: 16px 16px 0px 0px;
@@ -332,7 +337,7 @@ width: 23%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .grande-img{
-    height: 70%;
+    height: 90%;
     width: 100%;
    object-fit: cover;
 }
@@ -347,20 +352,21 @@ width: 23%;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     margin-bottom: 10%;
+    height: 55%;
 }
 .img-premiére-partie{
-    height: 200px;
+    height: 80%;
     width: 100%;
 }
 /*2éme partie de column 2 activités */
 .deuxiéme-partie{
-    height: 40%;
+    height: 35%;
     width: 100%;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .img-deuxiéme-partie{
-    height: 60%;
+    height: 70%;
     width: 100%;
     object-fit: cover;
 }
@@ -368,32 +374,37 @@ width: 23%;
 .colonne4{
     height: 100%;
     width: 23%;
-    margin-right: 0%;
-    margin-bottom: 0px;
+    justify-content: space-between;
 }
 /*1ère partie du column4 des activités*/
 .partie-haut{
     width: 100%;
-  height: 45%;
+  height: 40%;
     border-radius: 16px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     width: 100%;
 }
 .partie-haut-img{
-    height: 50%;
+    height: 80%;
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
 /*2eme partie du column4 activités*/
 .partie-bas{
- height: 45%;
+ height: 50%;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .partie-bas-img{
-    height:70%;
+    height:80%;
     width: 100%;
+}
+
+.liste-activités> div{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
 }
 /*début footer*/
 .footer{
@@ -474,11 +485,15 @@ width: 100%
     margin-bottom: 5%;
     box-sizing: border-box;
     padding-right: 0%;
-align-self: center;
 width: 96%;
 }
+.liste-activités> div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 #Activités{
-    width: 90%;
+    width: 100%;
 }
 #Activités img{
     width: 98%;
@@ -566,7 +581,8 @@ flex-wrap: wrap;
       }
       .Hébergements> div {
           border-radius: 0%;
-          background-color: transparent;
+          width: 100%;
+          padding-top: 0%;
       }
       /*section hotels plus populaires version mobile*/
 
@@ -594,6 +610,7 @@ flex-wrap: wrap;
     .liste-hébergements{
     flex-direction: column;
     border-radius: 0PX;
+    margin-top: 0%;
     }
     .Heberg-Marseille{
         background-color: white;
@@ -602,11 +619,12 @@ flex-wrap: wrap;
         width: 96%;
         align-items: center;
     }
-
+.Heberg-Marseille h3{
+    margin-top: 0%;
+}
     .hotel-card{
         border-radius: 20px;
         width: 96%;
-        height: 100%;
     }
     #Hébergements{
         width: 100%;
@@ -614,11 +632,10 @@ flex-wrap: wrap;
     /*les 6 images des hébergements à Marseilles */
     .IMG{
         width: 98%;
-        max-height: 100px; ;
         border-radius: 20px 20px 0px 0px;
         padding: 1%;
         object-fit: cover;
-        height: 100%;
+        height: 60%;
     }
     /*section activités à Marseille version mobile*/
     #Activités{
