@@ -76,26 +76,27 @@ display: flex;
    justify-content: center;
 }
 .recherche-ville input{
-    padding: 14px 60px 14px 14px;
+    padding: 14px 50px 14px 14px;
     border:#f2f2f2 solid 1px;
 }
 .recherche-ville input::placeholder{
   color: black;
   font-weight: bold;
   font-size: large;
-  margin-right: 7px;
+  margin-right: 5px;
   width: fit-content;
 }
 .recherche-ville button{
     background-color: #0065fc;
     font-weight: 600;
     color: white;
-    font-size:large;
+    font-size:larger;
     border-radius: 0 16px 16px 0;
-    padding: 6px;
+    padding: 4px;
     cursor: pointer;
-    width: 12%;
+    width: 10%;
     border:none;
+    box-sizing: border-box;
 }
 .search-icon{
     display:none;
@@ -128,8 +129,7 @@ font-size:medium;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 16px;
-margin-right: 20px;
+padding: 16px 20px 0 0;
 }
 .fa-money-bill-wave,.fa-child-reaching, .fa-heart, .fa-dog{
     background-color:#DEEBFF;
@@ -197,6 +197,9 @@ border-radius: 16px;
 .plus-lien{
     margin-top: 10%;
     font-weight: bold;
+}
+.Hébergements h3{
+    margin: 20px 0 20px 0;
 }
 .liste-hébergements{
     display: flex;
@@ -311,9 +314,8 @@ padding-left: 20px;
 padding-right: 20px;
 margin-top: 4%;
 }
-h3{
-    margin-top: 20px;
-    margin-bottom: 20PX;
+#Activités h3{
+    margin: 20px 0 20px 0;
 }
 .liste-activités{
     display: flex;
@@ -467,8 +469,13 @@ width: 100%
     height:180px;
     padding: 8px;
 }
+.populaires h3{
+    display: flex;
+    width: 91%;
+    padding-left: 2%;
+}
 .popular-card{
-    width: 90%;
+    width: 92%;
     align-self: center;
 }
 .liste-activités{
@@ -496,7 +503,7 @@ width: 96%;
     width: 100%;
 }
 #Activités img{
-    width: 98%;
+    width: 99%;
     height: 150px;
     border-radius: 12px 12px 0 0;
 }
@@ -506,17 +513,13 @@ width: 96%;
     background-color: #f2f2f2;
     margin-top: 2%;
     justify-content:space-between ;
-    padding-left:0px ;
-    padding-right: 0px;
+    padding:0px;
 }
 }
 /* responsive téléphones portables */
 @media screen and (max-width: 767px) {
     /*Logo version mobile*/
-    header{
-        padding-left: 3%;
-        padding-right: 3%;
-    }
+  
     .logo{
         display: block;
       margin: 8%;
@@ -549,8 +552,7 @@ justify-content: space-between;
         display: block;
     }
     .sous-titre{
-        margin-top: 5%;
-        margin-bottom: 6%;
+        margin:5% 0;
     }
     /*filtres version mobile*/
     .liste-filtres{
@@ -575,13 +577,12 @@ flex-wrap: wrap;
      /*Hébergements version mobile*/
      .Hébergements{
         flex-direction: column-reverse;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding:0%;
         margin-bottom: 10%;
       }
       .Hébergements> div {
           border-radius: 0%;
-          width: 100%;
+         
           padding-top: 0%;
       }
       /*section hotels plus populaires version mobile*/
@@ -601,7 +602,7 @@ flex-wrap: wrap;
     .popular-card img{
         border-radius: 16px 0 0 16px;
         padding: 0%;
-        width: 120px;
+        width: 110px;
     }
     .popular-card-info{
         padding-left: 5px;
@@ -614,8 +615,6 @@ flex-wrap: wrap;
     }
     .Heberg-Marseille{
         background-color: white;
-        padding-left: 10px;
-        padding-right: 10px;
         width: 96%;
         align-items: center;
     }
@@ -662,8 +661,7 @@ justify-content: space-between;
 background-color: #f2f2f2;
 margin-top: 5%;
 width: 110%;
-padding-left: 0px;
-padding-right: 0px;
+padding: 0%;
     }
     .footer-colonne{
     gap: 15px;
